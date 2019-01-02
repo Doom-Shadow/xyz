@@ -1,0 +1,349 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Aman Mishra">
+    <meta name="descriptors" content="Weapon And Armory">
+    <meta name="keywords" content="HTML,CSS,Javascript">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="style.css">-->
+    <style >
+        body    {
+                display:grid;
+                font-family:Red Seven ;
+                grid-template-areas:'header'  'content' 'footer' ;
+                grid-gap:15px;
+                height:auto;
+
+            }
+            .head   {   grid-area: header;
+                height:auto;
+                text-align:center;
+                background-color: #181616;
+                color:white;
+                box-shadow:5px 5px 10px #111111;
+                border-radius:1em;
+                overflow: hidden;
+    }   
+    .nav    {
+        font-family:Impact ;
+    }
+    .nav a{ margin:0px 20px 0px 20px;
+            text-decoration: none;
+            color:white;
+            padding:10px;
+
+    }
+    .nav a:hover{   
+                color:goldenrod;
+    }
+    .footer {
+        font-family:Arial;
+        grid-area:footer;
+        height:auto;
+        background-color:#111111;
+        color:white;
+        box-shadow:5px 5px 10px #161516;
+        border-radius:1em 0 1em 0;
+        
+    }
+    .footer div   {
+        float:left;
+        text-align: center;
+        margin:0 10% 0 0;
+    }
+    .footer a   {
+        text-decoration: none;
+        color:white;
+        padding:5px;
+        font-size: 13px;
+    }
+    .footer a:hover {
+        text-decoration:underline;
+        
+    }
+    ul  {
+        list-style-type: none;
+    }
+    #logo   {
+        width:15%;
+        height:15%;
+        float:left;
+    }
+    h1  {
+        text-shadow: 5px 5px 5px black;
+    }
+    .social i {
+        font-size: 200%;
+    }
+    .end    {
+        margin:0px 20px 0px 20px;
+        text-align:center;
+        clear: both;
+        font-size:11px;
+    }
+    hr  {clear: both;}
+
+    .content    {
+        grid-area:content;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    #c2-img   {
+            overflow:hidden;
+            
+            
+            font-family:Arial;
+            float:left;
+			width:340px;
+			height:340px;
+			text-align:center;
+			box-shadow:2px 2px 5px gray; 
+			margin:50px;
+    }
+    #c2-img img{       margin:20px 20px 10px 20px;
+					width:300px;
+					height:200px;
+				}
+    #c2-img a {
+        font-size:12px;
+        text-decoration:none;
+        color:firebrick;
+        
+    }
+    #c2-img a:hover{
+        text-decoration:underline;
+        color:teal;
+    }
+    .img_cont{
+        
+        
+        max-width: 100%;
+        overflow: hidden;
+      
+    }
+    .img_cont div   {
+        font-family:Red Seven ;
+        
+        margin:30px;
+        max-width:600px;
+        height:400px;
+        border-radius: 2em ;
+        background-color: #161516;
+    }
+    .img_cont span{
+        color:rgba(0, 0, 0, 0.815);
+        display: block;
+       
+        position:absolute;
+       
+    }
+    .img_cont img   {
+        min-width:400px;
+        height:400px;
+        z-index:-1;
+    }
+    #hq1{
+        float:left;
+        left:0px;
+        top: 0px;
+        overflow: hidden;
+    }
+    #hq2{
+        float:right;
+        right:0px;
+        top: 0px;
+        overflow:hidden;
+    }
+    #hq3{
+        float:left;
+        left:0px;
+        bottom: 0px;
+        overflow:hidden;
+    }
+    #hq4{float:right;
+        right:0px;
+        bottom: 0px;
+        overflow:hidden;
+    }
+
+    </style>
+    
+   
+</head>
+
+<body>
+<div class="head">
+    <img src="logo.jpg" id="logo">
+    <h1><span style="color:red;">ARC</span> - THE CREATORS</h1>
+    <div class="nav">
+            <a href="arc.html"><i class="fa fa-home" style="font-size:20px;"></i></a>|
+            <a href="company.html">COMPANY</a>|
+            <a href="future.html">FUTURE TECH</a>|
+            <a href="news.html">NEWS</a>|
+            <a href="partners.html">PARTNERS</a>|
+            <a href="arc_form.html" id="left">FORUMS & BLOGS</a>
+    </div>
+
+</div>
+
+
+<div class="content">
+<div class="c1">
+<!--Slide show-->
+    <div class="img_cont">
+    <div id="hq1"><img src="hq.png"><span>London, U.K</span></div>
+    <div id="hq2"><img src="hq2.jpg"><span>Paulo Alto, U.S.A</span></div>
+    <div id="hq3"><img src="hq3.png"><span>Hong Kong, China</span></div>
+    <div id="hq4"><img src="hq4.jpg"><span>Brussels, Belgium</span></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="info">
+    <p>
+            <b>WE SEEK TO IMPROVE BUSINESS PRACTICES TO BEST SERVE CUSTOMERS, EMPLOYEES AND OTHER STAKEHOLDERS ACROSS FIVE CORE ISSUES: 
+            BUSINESS INTEGRITY</b>
+            <br>
+            Integrity is a cornerstone of our business strategy. Poor ethical judgment by government contractors presents risks to future business opportunities and jeopardizes our customer’s ability to protect their citizens. Our high standards for integrity define how we do business and make us a partner of choice for the most sensitive and critical customer missions.
+            <br><br>
+            
+            <h3>PRODUCT IMPACT</h3>
+            Our 50,000 scientists, engineers and IT professionals develop a broad portfolio of products and solutions for national defense, cyber security, logistics and energy. This portfolio supports global advanced infrastructure for national security and citizen services to strengthen critical systems at scale. Customers measure our value through product quality, cost and reliability. We build safety, resource efficiency and other dimensions of sustainability into each phase of the product lifecycle, from design to delivery. By recognizing the nexus between customer needs and sustainability, we can design solutions that deliver greater value to our customers and society in terms of product impact and total cost of ownership.
+            <br><br>
+            
+            <h3>EMPLOYEE WELLBEING</h3>
+            Our business succeeds when our employees thrive. Employees with diverse backgrounds and perspectives contribute to our high-performance environment and enhance our competitiveness as an employer of choice. We prioritize talent recruitment, talent development, workforce safety and diversity and inclusion to meet customer needs and innovate for the future.
+            <br><br>
+            
+            <h3>RESOURCE EFFICIENCY</h3>
+            Our lifecycle-based assessments show our operations’ biggest opportunities are to reduce energy use and greenhouse gas (GHG) emissions. Our largest overall GHG challenge is the environmental footprint of our products during the customer use phase, constituting nearly 70 percent of our impact. Financially, we could be affected by future remediation requirements or regulations developed in response to federal, state, local and global concerns for climate risks, other aspects of the environment or natural resources. We reduce our footprint, and that action results in industry-leading outcomes. The Board of Directors and the Executive Leadership Team review our environmental performance at least twice annually.
+            <br><br>
+            
+            <h3>INFORMATION SECURITY</h3>
+            The world is increasingly connected through, and reliant on, digital infrastructure to support business, enhance production and drive innovation. Global information system security is critical to smoothly functioning, stable societies and affects governments, militaries, energy grids, communications systems and health records. Lockheed Martin systems and products safeguard crucial information for customers. Our IT infrastructure is routinely threatened by hacktivists, cyber criminals, insider threats and advanced persistent threats. Our ability to protect employee personal information is integral to mission success and trust. With thousands of our scientists and engineers developing patented solutions, the health of our business depends on protecting intellectual property (IP) and sensitive data.
+            
+             
+            
+             
+            
+             
+            
+             
+    </p>        
+
+
+
+    </div>
+</div>
+<br>
+<br>
+<div id="c2-img">
+
+    <img src="elections.jpg">
+    <span style="font-family:Arial; border-left:2px solid red; padding:5px; font-size:13px;">ELECTIONS HACK</span>
+    <br><br>
+    <b>Our expert view on US Elections...</b>
+    <br>
+    <a href="">Read More...</a>
+</div>
+
+
+<div id="c2-img">
+    <img src="responsibility.jpg">
+    <SPAN style="font-family:Arial; border-left:2px solid red; padding:5px; font-size: 13px; ">SOCIAL RESPONSIBILITY</SPAN>
+    <br><br>
+    <b>Supporting GSA 'THINK LIKE A PROGRAMMER'</b>
+    <br>
+    <a href="">Read More...</a>
+</div>
+
+<div id="c2-img">
+        <img src="w1.jpg">
+        <SPAN style="font-family:Arial; border-left:2px solid red; padding:5px; font-size: 13px; ">WEAPONS</SPAN>
+        <br><br>
+        <b>We as a 'GLOBAL SUPPLIERS'</b>
+        <br>
+        <a href="">Read More...</a>
+</div>
+
+
+
+</div>
+
+<div class="footer">
+    
+    <div id="map" style="width:300px;height:300px">
+          
+                  
+        <!--here google map and location will come refer Raytheon-->
+    </div>
+    <script src="js2.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4ycqN_G0nRlJlGkhxVVBkXVI9hhvZrG4&callback=myMap"></script>
+
+    <div class="who">
+        <span><b>WHO ARE WE</b></span>
+        <ul>
+            <li><a href="">Leaders</a></li>
+            <li><a href="">Business & Corporate</a></li>
+            <li><a href="">Diversity</a></li>
+            <li><a href="">Techs</a></li>
+            <li><a href="">Suppliers</a></li>
+            <li><a href="">IDIQ Contract Vehicles</a></li>
+            <li><a href="">Customer Tools</a></li>
+        </ul> 
+    </div>
+    <div class="global">
+            <span><b>GLOBAL</b></span>
+            <ul>
+                <li><a href="">Middle East</a></li>
+                <li><a href="">Europe</a></li>
+                <li><a href="">U.S.A.</a></li>
+
+            </ul> 
+    </div>
+    <div class="what">
+            <span><b>WHAT WE DO</b></span>
+            <ul>
+                <li><a href="">Missile Defence</a></li>
+                <li><a href="">Command and Control</a></li>
+                <li><a href="">Sensors and Imaging</a></li>
+                <li><a href="">Cyber</a></li>
+                <li><a href="">Electronic Warfare</a></li>
+                <li><a href="">Precision Weapons</a></li>
+                <li><a href="">Training & Support</a></li>
+            </ul> 
+    </div>   
+    <div class="news">
+            <span><b>NEWS</b></span>
+            <ul>
+                <li><a href="">Archives</a></li>
+                <li><a href="">Press Releases</a></li>
+                <li><a href="">Media Contacts</a></li>
+                <li><a href="">Innovation</a></li>
+
+            </ul> 
+    </div>
+    <div class="social">
+            
+            <a href=""><i class="fa fa-facebook-official" font></i></a>
+            <a href=""><i class="fa fa-linkedin-square" font></i></a>
+            <a href=""><i class="fa fa-snapchat-square" font></i></a>
+            <a href=""><i class="fa fa-twitter-square" font></i></a>
+            <a href=""><i class="fa fa-skype" font></i></a>
+            <!--HERE ICONS WILL COME-->
+    </div>
+    
+    <hr>  
+    <div class="end">
+            Copyright © 2018, Raytheon Company.
+            All rights reserved. Legal Notices | Privacy
+            Raytheon is proud to be an equal opportunity employer, MF/D/V.
+    </div>
+</div>
+
+</body>
+</html>

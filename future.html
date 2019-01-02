@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="Aman Mishra">
+        <meta name="descriptors" content="Weapon And Armory">
+        <meta name="keywords" content="HTML,CSS,Javascript">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
+
+        <style>
+            *   {
+                box-sizing: border-box;
+            }
+            body    {
+                display:grid;
+                font-family:Red Seven ;
+                grid-template-areas:'header'  'content' 'footer' ;
+                grid-gap:15px;
+                height:auto;
+
+            }
+    .head   {   grid-area: header;
+                height:auto;
+                text-align:center;
+                background-color: white;
+                color:rgb(49, 22, 17);
+                box-shadow:5px 5px 10px #5e3e3e;
+                border-radius:1em;
+                overflow: hidden;
+                position: relative;
+                
+    }
+    .nav    {
+        position:absolute;
+        width:90%;
+        left:15%;
+        bottom:0px;
+        font-family:Impact ;
+        background-color:rgb(33, 178, 223);
+        overflow: hidden;
+        height:40px;
+        vertical-align: center;
+    }
+    .nav a{ margin:0px 20px 0px 20px;
+            text-decoration: none;
+            color:whitesmoke;
+            padding:10px;
+            margin:.5px;
+            text-align: center;
+            width:100px;
+            background-color:rgb(33, 178, 223); 
+
+    }
+    .nav a:hover{   
+                background-color:rgb(0, 30, 128);
+    }
+    .content    {
+            width:100%;
+            overflow:hidden;
+            position:relative;
+            grid-area:content;
+            height:auto;
+            display:grid;
+            grid-template-areas:'col1 row1' 'col2 row2' 'col3 row3' 'col4 row4' 'col5 row5' 'col6 row6' 'col7 row7' 'col8 row8' ;
+            grid-gap:10px;
+            grid-template-columns: 0.9fr 0.9fr;
+            grid-template-rows: 0.5fr;
+    }
+    .content div    {
+        border-radius:2em;
+        box-shadow: 5px 5px 5px black;
+        overflow: hidden;
+        height:350px ;
+        position:relative;
+
+    }
+    .content img{
+        max-width: 100%;
+        max-height: 400px;
+        position: absolute;
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .data   {
+        text-align: center;
+        font-family:Comic Sans MS;
+        color:black;
+
+    }
+    .data h2{
+        font-family:Android 101;
+        text-align: center; 
+    }
+
+    .data a{
+        
+        position:absolute;
+        bottom:0px;
+        text-decoration:none;
+        
+        color:greenyellow;
+
+    }
+    .data a:hover   {
+        
+        color:green;
+    }
+
+
+
+    .footer {
+        font-family:Arial;
+        grid-area:footer;
+        height:auto;
+        background-color:#111111;
+        color:white;
+        box-shadow:5px 5px 10px #161516;
+        border-radius:1em 0 1em 0;
+        
+    }
+    .footer div   {
+        float:left;
+        text-align: center;
+        margin:0 10% 0 0;
+    }
+    .footer a   {
+        text-decoration: none;
+        color:white;
+        padding:5px;
+        font-size: 13px;
+    }
+    .footer a:hover {
+        text-decoration:underline;
+        
+    }
+    ul  {
+        list-style-type: none;
+    }
+    #logo   {
+        width:15%;
+        height:15%;
+        float:left;
+    }
+    h1  {
+        text-shadow: 5px 5px 5px black;
+    }
+    .social i {
+        font-size: 200%;
+    }
+    .end    {
+        margin:0px 20px 0px 20px;
+        text-align:center;
+        clear: both;
+        font-size:11px;
+    }
+    hr  {clear: both;}
+        </style>
+
+    </head>
+    <body>
+            <div class="head">
+                    <img src="logo.jpg" id="logo">
+                    <h1><span style="color:red;">ARC</span> - THE CREATORS</h1>
+                    <div class="nav">
+                            <a href="arc.html"><i class="fa fa-home" style="font-size:20px;"></i></a>
+                            <a href="company.html">COMPANY</a>
+                            <a href="future.html">FUTURE TECH</a>
+                            <a href="news.html">NEWS</a>
+                            <a href="partners.html">PARTNERS</a>
+                            <a href="arc_form.html" id="left">FORUMS & BLOGS</a>
+                    </div>
+                
+            </div>
+            <div class="content">
+                
+                <div class="M16-A4" >
+                    <img src="m16a4.jpg">
+                </div>
+                <div class="data">
+                    <h2>M16-A4</h2>
+                    
+                </div>
+                   
+                <div class="DRAUGNOV">
+                        <img src="draugnov.jpg">
+                    
+                </div>
+                <div class="data">
+                        <h2>SVD-DRAUGNOV</h2>
+
+                </div>
+                <div class="M416">
+                    <img src="m416.jpg">
+                </div>
+                <div class="data">
+                        <h2>M416</h2>
+                </div>
+                <div class="AWM">
+                    <img src="awm.jpg">
+                </div>
+                <div class="data">
+                        <h2>AWM</h2>
+                </div>
+                <div class="SPAS-12">
+                    <img src="spas12.png">
+                </div>
+                <div class="data">
+                        <h2>SPAS-12</h2>
+                </div>
+                <div class="UZI">
+                    <img src="uzi.jpg">    
+                </div>
+                <div class="data">
+                        <h2>UZI</h2>
+                </div>
+                <div class="TANKS">
+                    <img src="m1a1tank.jpg">  
+                </div>
+                <div class="data">
+                        <h2>M1A1-BATTLE TANK</h2>
+                </div>
+                <div class="KALASHKINOV">
+                    <img src="kalashkinov.jpg">
+                </div>
+                <div class="data">
+                        <h2>KALASHKINOV</h2>
+                        <a href=""><h2>MORE</h2></a>
+                </div>
+
+            </div>
+
+            <div class="footer">
+    
+                    <div id="map" style="width:300px;height:300px">
+                          
+                                  
+                        <!--here google map and location will come refer Raytheon-->
+                    </div>
+                    <script src="js2.js"></script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4ycqN_G0nRlJlGkhxVVBkXVI9hhvZrG4&callback=myMap"></script>
+                
+                    <div class="who">
+                        <span><b>WHO ARE WE</b></span>
+                        <ul>
+                            <li><a href="">Leaders</a></li>
+                            <li><a href="">Business & Corporate</a></li>
+                            <li><a href="">Diversity</a></li>
+                            <li><a href="">Techs</a></li>
+                            <li><a href="">Suppliers</a></li>
+                            <li><a href="">IDIQ Contract Vehicles</a></li>
+                            <li><a href="">Customer Tools</a></li>
+                        </ul> 
+                    </div>
+                    <div class="global">
+                            <span><b>GLOBAL</b></span>
+                            <ul>
+                                <li><a href="">Middle East</a></li>
+                                <li><a href="">Europe</a></li>
+                                <li><a href="">U.S.A.</a></li>
+                
+                            </ul> 
+                    </div>
+                    <div class="what">
+                            <span><b>WHAT WE DO</b></span>
+                            <ul>
+                                <li><a href="">Missile Defence</a></li>
+                                <li><a href="">Command and Control</a></li>
+                                <li><a href="">Sensors and Imaging</a></li>
+                                <li><a href="">Cyber</a></li>
+                                <li><a href="">Electronic Warfare</a></li>
+                                <li><a href="">Precision Weapons</a></li>
+                                <li><a href="">Training & Support</a></li>
+                            </ul> 
+                    </div>   
+                    <div class="news">
+                            <span><b>NEWS</b></span>
+                            <ul>
+                                <li><a href="">Archives</a></li>
+                                <li><a href="">Press Releases</a></li>
+                                <li><a href="">Media Contacts</a></li>
+                                <li><a href="">Innovation</a></li>
+                
+                            </ul> 
+                    </div>
+                    <div class="social">
+                            
+                            <a href=""><i class="fa fa-facebook-official" font></i></a>
+                            <a href=""><i class="fa fa-linkedin-square" font></i></a>
+                            <a href=""><i class="fa fa-snapchat-square" font></i></a>
+                            <a href=""><i class="fa fa-twitter-square" font></i></a>
+                            <a href=""><i class="fa fa-skype" font></i></a>
+                            <!--HERE ICONS WILL COME-->
+                    </div>
+                    
+                    <hr>  
+                    <div class="end">
+                            Copyright © 2018, Raytheon Company.
+                            All rights reserved. Legal Notices | Privacy
+                            Raytheon is proud to be an equal opportunity employer, MF/D/V.
+                    </div>
+                </div>
+
+    </body>
+</html>

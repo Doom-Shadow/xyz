@@ -1,0 +1,33 @@
+<!doctype html>
+<head>
+    <title>
+        ARC.Org
+    </title>
+     <meta charset="UTF-8">
+    <meta name="author" content="Aman Mishra">
+    <meta name="descriptors" content="Weapon And Armory">
+    <meta name="keywords" content="HTML,CSS,Javascript">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+    
+    </style>
+<body>
+<div class="logIn">
+    <h2>LogIn</h2>
+    E-Mail : 
+    <input type="text" placeholder="xyz@gmail.com"></input>
+    Password : 
+    <input type="password" placeholder="********"></input>
+    <br><br>
+    <a href="">Aready a member</a>
+</div>
+<div class="logIn">
+    <h2>LogIn</h2>
+    E-Mail : 
+    <input type="text" placeholder="xyz@gmail.com"></input>
+    Password : 
+    <input type="password" placeholder="********"></input>
+    <a href="">New Here</a>
+</div>
+</body>
+</html>

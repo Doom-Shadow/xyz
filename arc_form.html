@@ -1,0 +1,118 @@
+<!doctype html>
+<head>
+    <script  type="text/javascript" src="form.js" defer></script>
+    <title>
+        ARC.Org
+    </title>
+     <meta charset="UTF-8">
+    <meta name="author" content="Aman Mishra">
+    <meta name="descriptors" content="Weapon And Armory">
+    <meta name="keywords" content="HTML,CSS,Javascript">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+    * {
+    box-sizing: border-box;
+    }
+
+    .container{
+        background-image: url("form.jpg");
+        
+    min-height:550px;
+/* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+    #signUp button{margin:10px;}
+    #logIn button{margin:10px;}
+
+    #signUp,#logIn {
+    
+    position: absolute;
+    bottom:50px;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+}
+
+    a   {   
+        font-size:12px;
+        text-decoration:none;
+        color:green;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    img {position:absolute;
+        opacity:0.9;
+        width:100%;
+        z-index:-1;
+        
+    }
+    input [type=text],input [type=password]{
+        width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    
+    }
+    input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+    
+    }
+    button  {
+        background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9
+    }
+    @media screen and (max-height: 500px)
+    {
+        .container{
+            min-height: 380px;
+        }
+    }
+    </style>
+<body>
+<div class="container">
+        
+<div id="logIn" style="display:none">
+    
+    <form>
+    <h1>LogIn</h1>
+    <b>E-Mail :</b> 
+    <input type="text" placeholder="xyz@gmail.com" id="test">
+    <br><br>
+    <b>Password :</b> 
+    <input type="password" placeholder="********"><br>
+    <button >Submit</button>
+    <br><br>
+    <button id="tap" onclick="shift()">New Here</button>
+    </form>
+</div>
+<div id="signUp" style="display:block;">
+    <form>
+    <h1>SignUp</h2>
+    <b>E-Mail :</b> 
+    <input type="text" placeholder="xyz@gmail.com">
+    <br><br>
+    <b>Password :</b> 
+    <input type="password" placeholder="********">
+    <br>
+    <button>Submit</button>
+    <br><br>
+    <button id="tap"  onclick="shift()">Already A Member</button>
+    </form>
+</div>
+</div>
+
+</body>
+</html>

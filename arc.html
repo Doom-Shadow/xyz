@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Aman Mishra">
+    <meta name="descriptors" content="Weapon And Armory">
+    <meta name="keywords" content="HTML,CSS,Javascript">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="js1.js"></script>
+    
+    <style>
+    *   {   
+            box-sizing: border-box;
+    }   
+    @keyframes slidesFaint{
+        0% {opacity: 0.2;}
+        10% {opacity: 0.4;}
+        20% {opacity: 0.6;}
+        30% {opacity: 0.8;}
+        40% {opacity: 1;}
+        50% {opacity: 1;}
+        60% {opacity: 1;}
+        70% {opacity: 0.8;}
+        80% {opacity: 0.6;}
+        90% {opacity: 0.4;}
+        100% {opacity: 0.2;}
+
+    }
+    body    {
+                display:grid;
+                font-family:Red Seven ;
+                grid-template-areas:'header'  'content' 'footer' ;
+                grid-gap:15px;
+                height:auto;
+
+            }
+    .head   {   grid-area: header;
+                height:auto;
+                text-align:center;
+                background-color: #181616;
+                color:white;
+                box-shadow:5px 5px 10px #111111;
+                border-radius:1em;
+                overflow: hidden;
+    }
+    .nav    {
+        font-family:Impact ;
+    }
+    .nav a{ margin:0px 20px 0px 20px;
+            text-decoration: none;
+            color:white;
+            padding:10px;
+
+    }
+    .nav a:hover{   
+                color:goldenrod;
+    }
+    .content    {
+            width:100%;
+            overflow:hidden;
+            position:relative;
+            grid-area:content;
+            height:auto;
+    }
+    .footer {
+        font-family:Arial;
+        grid-area:footer;
+        height:auto;
+        background-color:#111111;
+        color:white;
+        box-shadow:5px 5px 10px #161516;
+        border-radius:1em 0 1em 0;
+        
+    }
+    .footer div   {
+        float:left;
+        text-align: center;
+        margin:0 10% 0 0;
+    }
+    .footer a   {
+        text-decoration: none;
+        color:white;
+        padding:5px;
+        font-size: 13px;
+    }
+    .footer a:hover {
+        text-decoration:underline;
+        
+    }
+    ul  {
+        list-style-type: none;
+    }
+    #logo   {
+        width:15%;
+        height:15%;
+        float:left;
+    }
+    h1  {
+        text-shadow: 5px 5px 5px black;
+    }
+    .social i {
+        font-size: 200%;
+    }
+    .end    {
+        margin:0px 20px 0px 20px;
+        text-align:center;
+        clear: both;
+        font-size:11px;
+    }
+    hr  {clear: both;}
+
+    #c2-img   {
+            overflow:hidden;
+            
+            
+            font-family:Arial;
+            float:left;
+			width:340px;
+			height:340px;
+			text-align:center;
+			box-shadow:2px 2px 5px gray; 
+			margin:50px;
+    }
+    #c2-img img{       margin:20px 20px 10px 20px;
+					width:300px;
+					height:200px;
+				}
+    #c2-img a {
+        font-size:12px;
+        text-decoration:none;
+        color:firebrick;
+        
+    }
+    #c2-img a:hover{
+        text-decoration:underline;
+        color:teal;
+    }
+    .c1 {
+        width:100%;
+        height:500px;
+    }
+    .button-container{
+        position:absolute;
+        right:0px;
+        
+    }
+    .content button {
+        padding:5px;
+        color:white;
+        border-radius:1em;
+        background-color:gray;
+        border:none;
+    }
+    .content button:hover   {
+        background-color: cornflowerblue;
+    }
+    .c1 img {max-width: 100%;;
+        position:absolute;
+        z-index:-1;
+    }
+    .overhead   {
+        background-color: black;
+        color:white;
+        font-family:Lucida Handwriting;  
+        opacity:0.6;
+        position:absolute;
+        top:10%;
+        left:0px;
+        max-width:40%;
+        
+    }
+
+    .overhead,#chang    {
+        animation-name: slidesFaint;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    </style>
+
+</head>
+
+<body>
+<div class="head">
+    <img src="logo.jpg" id="logo">
+    <h1><span style="color:red;">ARC</span> - THE CREATORS</h1>
+    <div class="nav">
+            <a href="arc.html"><i class="fa fa-home" style="font-size:20px;"></i></a>|
+            <a href="company.html">COMPANY</a>|
+            <a href="future.html">FUTURE TECH</a>|
+            <a href="news.html">NEWS</a>|
+            <a href="partners.html">PARTNERS</a>|
+            <a href="arc_form.html" id="left">FORUMS & BLOGS</a>
+    </div>
+
+</div>
+
+
+<div class="content">
+<div class="c1">
+<!--Slide show-->
+    <img id="chang" src="ss1.jpg" >
+    
+    <div class="button-container">
+        <button id="next" onclick="forward()">NEXT</button>
+        <button id="prev" onclick="prev()">PREV</button>
+        <button id="img-1" onclick="dis(0)"> </button>
+        <button id="img-2" onclick="dis(1)"> </button>
+        <button id="img-3" onclick="dis(2)"> </button>
+        <button id="img-4" onclick="dis(3)"> </button>
+    </div>
+    <div class="overhead">
+        
+        <span id="1-overhead" ><h1>NASA USING OUR TECH</h1>Satellite  program  of  NASA  using  our  <b>Survelliance System</b>  and  <b>Electronic Designs</b>...</span>
+        <span id="2-overhead" style="display:none;"><h1>SWEDEN USA REACH AGREEMENT </h1>16 Nations now rely on <b>Patriot System</b> for Missile Defence...</span>
+        <span id="3-overhead" style="display:none;"><h1>BYILDING FOR FUTURE</h1>Leading world to advanced Machinery's ...</span>
+        <span id="4-overhead" style="display:none;"><h1>RUN FOR HEROES</h1>Our Employees showing gratitude towards  <b>MILITARY</b>...</span>
+
+
+
+    </div>
+</div>
+<br>
+<br>
+<div id="c2-img">
+
+    <img src="elections.jpg">
+    <span style="font-family:Arial; border-left:2px solid red; padding:5px; font-size:13px;">ELECTIONS HACK</span>
+    <br><br>
+    <b>Our expert view on US Elections...</b>
+    <br>
+    <a href="">Read More...</a>
+</div>
+
+
+<div id="c2-img">
+    <img src="responsibility.jpg">
+    <SPAN style="font-family:Arial; border-left:2px solid red; padding:5px; font-size: 13px; ">SOCIAL RESPONSIBILITY</SPAN>
+    <br><br>
+    <b>Supporting GSA 'THINK LIKE A PROGRAMMER'</b>
+    <br>
+    <a href="">Read More...</a>
+</div>
+
+<div id="c2-img">
+        <img src="w1.jpg">
+        <SPAN style="font-family:Arial; border-left:2px solid red; padding:5px; font-size: 13px; ">WEAPONS</SPAN>
+        <br><br>
+        <b>We as a 'GLOBAL SUPPLIERS'</b>
+        <br>
+        <a href="">Read More...</a>
+</div>
+
+
+
+</div>
+
+<div class="footer">
+    
+    <div id="map" style="width:300px;height:300px">
+          
+                  
+        <!--here google map and location will come refer Raytheon-->
+    </div>
+    <script src="js2.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4ycqN_G0nRlJlGkhxVVBkXVI9hhvZrG4&callback=myMap"></script>
+
+    <div class="who">
+        <span><b>WHO ARE WE</b></span>
+        <ul>
+            <li><a href="">Leaders</a></li>
+            <li><a href="">Business & Corporate</a></li>
+            <li><a href="">Diversity</a></li>
+            <li><a href="">Techs</a></li>
+            <li><a href="">Suppliers</a></li>
+            <li><a href="">IDIQ Contract Vehicles</a></li>
+            <li><a href="">Customer Tools</a></li>
+        </ul> 
+    </div>
+    <div class="global">
+            <span><b>GLOBAL</b></span>
+            <ul>
+                <li><a href="">Middle East</a></li>
+                <li><a href="">Europe</a></li>
+                <li><a href="">U.S.A.</a></li>
+
+            </ul> 
+    </div>
+    <div class="what">
+            <span><b>WHAT WE DO</b></span>
+            <ul>
+                <li><a href="">Missile Defence</a></li>
+                <li><a href="">Command and Control</a></li>
+                <li><a href="">Sensors and Imaging</a></li>
+                <li><a href="">Cyber</a></li>
+                <li><a href="">Electronic Warfare</a></li>
+                <li><a href="">Precision Weapons</a></li>
+                <li><a href="">Training & Support</a></li>
+            </ul> 
+    </div>   
+    <div class="news">
+            <span><b>NEWS</b></span>
+            <ul>
+                <li><a href="">Archives</a></li>
+                <li><a href="">Press Releases</a></li>
+                <li><a href="">Media Contacts</a></li>
+                <li><a href="">Innovation</a></li>
+
+            </ul> 
+    </div>
+    <div class="social">
+            
+            <a href=""><i class="fa fa-facebook-official" font></i></a>
+            <a href=""><i class="fa fa-linkedin-square" font></i></a>
+            <a href=""><i class="fa fa-snapchat-square" font></i></a>
+            <a href=""><i class="fa fa-twitter-square" font></i></a>
+            <a href=""><i class="fa fa-skype" font></i></a>
+            <!--HERE ICONS WILL COME-->
+    </div>
+    
+    <hr>  
+    <div class="end">
+            Copyright © 2018, Raytheon Company.
+            All rights reserved. Legal Notices | Privacy
+            Raytheon is proud to be an equal opportunity employer, MF/D/V.
+    </div>
+</div>
+
+</body>
+</html>
